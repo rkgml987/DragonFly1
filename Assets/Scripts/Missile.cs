@@ -14,7 +14,7 @@ public class Missile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += Vector3.up * moveSpeed * Time.deltaTime;
+        transform.position += transform.up * moveSpeed * Time.deltaTime;
         if (transform.position.y > 7f)
         {
             Destroy(this.gameObject);
